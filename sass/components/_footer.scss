@@ -1,0 +1,63 @@
+// Футер
+.page-footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.page-footer__logo {
+  color: $primary-bg-color;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+
+.footer__item:not(:first-child) {
+  margin-top: 9px;
+}
+
+.footer__address {
+  text-decoration: none;
+  color: $primary-bg-color;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  display: block;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+
+.footer__link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+
+.footer-main-contacts {
+  margin-top: 20px;
+}

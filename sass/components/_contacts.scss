@@ -1,0 +1,39 @@
+/* Контакти */
+
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+
+/* Псевдокласс соседа - даётся только между соседом */
+.contact .contact__item + .contact__item {
+  margin-left: 50px;
+}
+
+.contact__link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $primary-text-color;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+
+.contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
