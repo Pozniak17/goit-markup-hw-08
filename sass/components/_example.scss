@@ -1,6 +1,14 @@
 /* Приклади та команда мають однакові параметри, 
 section-title - універсальний клас для h2 */
 
+.works {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
 .section__title {
   color: $title-text-color;
   font-size: 36px;
