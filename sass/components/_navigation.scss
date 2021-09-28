@@ -11,6 +11,7 @@
 .page-header__сontainer {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -27,8 +28,8 @@
 }
 
 .page-header__logo {
-  padding-top: 25px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   margin-right: 93px;
 
   color: #000000;
@@ -47,6 +48,7 @@
 .site-nav {
   position: relative;
   display: flex;
+  display: none;
 }
 
 .site-nav__item:not(:last-child) {
@@ -89,5 +91,16 @@
     border-radius: 2px;
     background-color: $accent;
     bottom: -1px;
+  }
+}
+
+// Стилі іконки в хедері
+.menu-open {
+  border: none;
+  fill: $title-text-color;
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    fill: $accent;
   }
 }

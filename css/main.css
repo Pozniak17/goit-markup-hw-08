@@ -88,6 +88,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .logo {
@@ -106,8 +109,8 @@ img {
 }
 
 .page-header__logo {
-  padding-top: 25px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   margin-right: 93px;
   color: #000000;
 }
@@ -126,6 +129,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: none;
 }
 
 .site-nav__item:not(:last-child) {
@@ -170,12 +174,23 @@ img {
   bottom: -1px;
 }
 
+.menu-open {
+  border: none;
+  fill: #212121;
+  background-color: transparent;
+}
+
+.menu-open:hover, .menu-open:focus {
+  fill: #2196f3;
+}
+
 /* Контакти */
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
+  display: none;
 }
 
 /* Псевдокласс соседа - даётся только между соседом */
