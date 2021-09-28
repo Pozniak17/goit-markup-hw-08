@@ -1061,10 +1061,16 @@ section-title - універсальний клас для h2 */
   color: #212121;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__title {
+    line-height: 1.15;
+  }
 }
 
 .modal-form__wrap {
@@ -1104,6 +1110,26 @@ section-title - універсальний клас для h2 */
   background-color: #2196f3;
   border: none;
   border: transparent;
+}
+
+.modal-form__input:hover::-webkit-input-placeholder,
+.modal-form__input:focus::-webkit-input-placeholder {
+  color: #2196f3;
+}
+
+.modal-form__input:hover:-ms-input-placeholder,
+.modal-form__input:focus:-ms-input-placeholder {
+  color: #2196f3;
+}
+
+.modal-form__input:hover::-ms-input-placeholder,
+.modal-form__input:focus::-ms-input-placeholder {
+  color: #2196f3;
+}
+
+.modal-form__input:hover::placeholder,
+.modal-form__input:focus::placeholder {
+  color: #2196f3;
 }
 
 .modal-form__input:hover + .modal-form__icon,
