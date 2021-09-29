@@ -1,6 +1,9 @@
-.container--wrapper {
+.main-footer {
+  margin-right: 70px;
+  // При 320px
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
 }
 
 .second-footer__title {
@@ -34,8 +37,9 @@
 
 .second-footer__list {
   display: flex;
-  justify-content: center;
   margin-top: 20px;
+  // При 320px
+  // justify-content: center;
 }
 
 .second-footer__item:hover,
@@ -46,8 +50,4 @@
 
 .second-footer__item:not(:last-child) {
   margin-right: 10px;
-}
-
-.main-footer {
-  margin-right: 70px;
 }

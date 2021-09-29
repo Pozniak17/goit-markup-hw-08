@@ -5,6 +5,13 @@
   padding-bottom: 60px;
 }
 
+.container--wrapper {
+  // align-items: baseline;
+  // При 320px
+  display: flex;
+  flex-direction: column;
+}
+
 .page-footer__logo {
   color: $primary-bg-color;
   font-family: Raleway, sans-serif;

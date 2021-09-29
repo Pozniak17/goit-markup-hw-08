@@ -788,6 +788,16 @@ section-title - універсальний клас для h2 */
   padding-bottom: 60px;
 }
 
+.container--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .page-footer__logo {
   color: #ffffff;
   font-family: Raleway, sans-serif;
@@ -846,13 +856,18 @@ section-title - універсальний клас для h2 */
   margin-top: 20px;
 }
 
-.container--wrapper {
+.main-footer {
+  margin-right: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .second-footer__title {
@@ -896,9 +911,6 @@ section-title - універсальний клас для h2 */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-top: 20px;
 }
 
@@ -910,10 +922,6 @@ section-title - універсальний клас для h2 */
 
 .second-footer__item:not(:last-child) {
   margin-right: 10px;
-}
-
-.main-footer {
-  margin-right: 70px;
 }
 
 .third-footer {
