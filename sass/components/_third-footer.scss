@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+    }
   }
 
   &__wrap {
@@ -11,6 +14,10 @@
     // При 320px
     align-items: center;
     flex-direction: column;
+    @media screen and (min-width: 1200px) {
+      align-items: normal;
+      flex-direction: row;
+    }
   }
 
   &__input {

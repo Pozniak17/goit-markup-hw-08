@@ -983,6 +983,14 @@ section-title - універсальний клас для h2 */
           align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .third-footer__form {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .third-footer__wrap {
   margin-top: 20px;
   display: -webkit-box;
@@ -995,6 +1003,18 @@ section-title - універсальний клас для h2 */
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .third-footer__wrap {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .third-footer__input {
