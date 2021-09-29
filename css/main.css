@@ -145,6 +145,14 @@ img {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -1384,6 +1392,12 @@ section-title - універсальний клас для h2 */
   height: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
 .mob-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -1496,5 +1510,11 @@ section-title - універсальний клас для h2 */
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
