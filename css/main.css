@@ -197,11 +197,31 @@ img {
 
 /* Контакти */
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 /* Псевдокласс соседа - даётся только между соседом */
@@ -234,6 +254,13 @@ img {
 
 .contact__link:hover, .contact__link:focus {
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .contact__link {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .contact__icon {
