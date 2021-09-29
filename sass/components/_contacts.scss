@@ -4,17 +4,23 @@
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
   }
+
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;
   }
 }
-
 /* Псевдокласс соседа - даётся только между соседом */
+// Можно было медиа запрос просто до 1199пкс убрать марджин,
+// ну та хай буде.
 .contact .contact__item + .contact__item {
   margin-left: 50px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 0;
+  }
 }
 
 .contact__link {
@@ -47,4 +53,10 @@
 .contact__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.contact__item:not(:last-child) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
 }

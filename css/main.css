@@ -205,6 +205,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -227,6 +229,12 @@ img {
 /* Псевдокласс соседа - даётся только между соседом */
 .contact .contact__item + .contact__item {
   margin-left: 50px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact .contact__item + .contact__item {
+    margin: 0;
+  }
 }
 
 .contact__link {
@@ -266,6 +274,12 @@ img {
 .contact__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .hero {
