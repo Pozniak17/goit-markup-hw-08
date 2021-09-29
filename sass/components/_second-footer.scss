@@ -1,9 +1,8 @@
-.main-footer {
-  margin-right: 70px;
-  // При 320px
+.second-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .second-footer__title {
