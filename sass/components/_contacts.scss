@@ -17,9 +17,11 @@
 // Можно было медиа запрос просто до 1199пкс убрать марджин,
 // ну та хай буде.
 .contact .contact__item + .contact__item {
-  margin-left: 50px;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     margin: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
   }
 }
 
@@ -56,7 +58,7 @@
 }
 
 .contact__item:not(:last-child) {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     margin-bottom: 10px;
   }
 }

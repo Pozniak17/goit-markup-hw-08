@@ -227,13 +227,15 @@ img {
 }
 
 /* Псевдокласс соседа - даётся только между соседом */
-.contact .contact__item + .contact__item {
-  margin-left: 50px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .contact .contact__item + .contact__item {
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact .contact__item + .contact__item {
+    margin-left: 50px;
   }
 }
 
@@ -276,7 +278,7 @@ img {
   fill: currentColor;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .contact__item:not(:last-child) {
     margin-bottom: 10px;
   }
