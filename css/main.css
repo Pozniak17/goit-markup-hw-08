@@ -803,6 +803,13 @@ section-title - універсальний клас для h2 */
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .main-footer {
+    display: block;
+    text-align: start;
+  }
+}
+
 .container--wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -899,6 +906,14 @@ section-title - універсальний клас для h2 */
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .second-footer {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .second-footer__title {
