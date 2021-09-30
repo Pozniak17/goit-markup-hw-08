@@ -1558,6 +1558,7 @@ section-title - універсальний клас для h2 */
 }
 
 .mob-menu {
+  z-index: 1;
   position: fixed;
   background-color: #ffffff;
   width: 100vw;

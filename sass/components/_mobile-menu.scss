@@ -1,6 +1,7 @@
 // модалка
 
 .mob-menu {
+  z-index: 1;
   position: fixed;
   background-color: $primary-bg-color;
   width: 100vw;
