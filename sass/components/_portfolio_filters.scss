@@ -1,7 +1,18 @@
 .filters {
+  width: 400px;
+  height: 91px;
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+}
+
+.filters__item {
+  margin-bottom: 15px;
 }
 
 .filters__item:not(:last-child) {
