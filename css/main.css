@@ -1707,4 +1707,8 @@ section-title - універсальний клас для h2 */
     display: none;
   }
 }
+
+.mob-menu__link--current {
+  color: #2196f3;
+}
 /*# sourceMappingURL=main.css.map */
