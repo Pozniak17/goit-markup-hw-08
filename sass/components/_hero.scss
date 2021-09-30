@@ -8,7 +8,7 @@
   margin-right: auto;
   // Стандартні зображення від 320px
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/mobile/imghero.jpg);
+    url(../images/mobile/imghero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,19 +16,19 @@
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/mobile/imghero@2x.jpg);
+      url(../images/mobile/imghero@2x.jpg);
   }
 
   // Фон в Герой на планшетну версію
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/tablet/imghero.jpg);
+      url(../images/tablet/imghero.jpg);
   }
   @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/tablet/imghero@2x.jpg);
+      url(../images/tablet/imghero@2x.jpg);
   }
 
   // Фон в Герой на десктопну версію
@@ -37,13 +37,13 @@
     padding-bottom: 200px;
     height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/desktop/imghero.jpg);
+      url(../images/desktop/imghero.jpg);
   }
   @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/desktop/imghero@2x.jpg);
+      url(../images/desktop/imghero@2x.jpg);
   }
 }
 
