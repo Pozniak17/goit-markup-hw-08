@@ -8,6 +8,8 @@
   @media screen and (min-width: 768px) {
     justify-content: center;
     flex-wrap: nowrap;
+    min-width: 100%;
+    min-height: 100%;
   }
 }
 

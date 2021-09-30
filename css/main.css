@@ -1074,6 +1074,8 @@ section-title - універсальний клас для h2 */
             justify-content: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    min-width: 100%;
+    min-height: 100%;
   }
 }
 
