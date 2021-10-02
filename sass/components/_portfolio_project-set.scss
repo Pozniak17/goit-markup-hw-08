@@ -57,7 +57,8 @@
 }
 
 .project__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -67,6 +68,9 @@
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 1px 4px 6px rgba(0, 0, 0, 0.16),
       0px 4px 4px rgba(0, 0, 0, 0.06);
+  }
+  @media screen and (max-width: 1199px) {
+    height: 100%;
   }
 }
 
@@ -102,7 +106,7 @@
   background-color: $primary-bg-color;
   border: 1px solid #eeeeee;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    height: 146px;
+    flex-grow: 1;
   }
 }
 
