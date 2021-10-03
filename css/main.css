@@ -208,11 +208,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: block;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1091,6 +1087,22 @@ section-title - універсальний клас для h2 */
 @media screen and (min-width: 1200px) {
   .filters {
     margin-bottom: 50px;
+  }
+}
+
+.filters__item {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .filters__item {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 479px) {
+  .filters__item::nth-child(-n + 3) {
+    margin-bottom: 15px;
   }
 }
 
