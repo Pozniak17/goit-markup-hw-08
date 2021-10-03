@@ -8,8 +8,6 @@
 }
 
 .section__list {
-  // display: flex;
-  // justify-content: center;
   margin-bottom: -30px;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -37,9 +35,12 @@
 }
 
 .section__container {
+  height: 120px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 25px 100px;
+  // тут виправлення
+  // padding: 25px 100px;
   margin-bottom: 30px;
   background-color: $secondary-bg-color;
 }
