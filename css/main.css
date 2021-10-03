@@ -124,8 +124,15 @@ img {
   color: darkorchid;
 }
 
+@media screen and (min-width: 768px) {
+  .page-header__logo {
+    margin-right: 88px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .page-header__logo {
+    margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
   }
