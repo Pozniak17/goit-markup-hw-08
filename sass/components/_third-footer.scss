@@ -9,6 +9,8 @@
   }
 
   &__wrap {
+    width: 100%;
+    // тут виправлення
     margin-top: 20px;
     display: flex;
     // При 320px
@@ -21,7 +23,8 @@
   }
 
   &__input {
-    width: 450px;
+    // width: 450px; виправлення
+    width: 100%;
     height: 50px;
     border-radius: 4px;
     background-color: inherit;
